@@ -1,5 +1,6 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
+import copy from 'rollup-plugin-copy'
 
 import { readdirSync } from 'fs';
 
@@ -15,7 +16,7 @@ const locales = readdirSync('locales').map(locale =>
 
     plugins: [
       nodeResolve(),
-      typescript(),
+      typescript()
     ]
   }));
 
@@ -33,7 +34,8 @@ export default [{
     /** Resolve bare module imports */
     nodeResolve(),
     typescript(),
-   ],
+    copy({targets: [{ src: 'components/ace', dest: 'dist/components' }]})
+   ]
 },{
   input: 'foundation.ts',
   output: {
@@ -47,6 +49,6 @@ export default [{
   plugins: [
     /** Resolve bare module imports */
     nodeResolve(),
-    typescript(),
+    typescript()
    ],
 }].concat(locales);
