@@ -14370,7 +14370,7 @@ const { getLocale, setLocale } = configureLocalization({
     loadLocale: locale => import(new URL(`./locales/${locale}.js`, import.meta.url).href),
 });
 function describe({ undo, redo }) {
-    let result = msg('Something unexpected happened!');
+    let result = msg('Something shockingly woofuly unexpected happened!');
     if (isComplex(redo))
         result = msg(str `≥ ${redo.length} nodes changed`);
     if (isInsert(redo))
