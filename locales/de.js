@@ -83,8 +83,8 @@ const templates = {
     's85a55e7007003cc2': str `${0} verändert`,
     's8f4be9f086eb530f': `Rückgängig`,
     's90c6a2fed2796c07': `Bearbeitungshistorie`,
+    'sbcdf43ebad9c5a3a': `Etwas unerwartetes ist passiert!`,
     'sfb0e98cb12fe463c': `Hier wird Ihre Bearbeitungshistorie angezeigt.`,
-    's8310e34142578360': `Something shockingly woofuly unexpected happened!`,
 };
 
 export { templates };

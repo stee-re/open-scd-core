@@ -14,6 +14,6 @@ export declare const templates: {
     s85a55e7007003cc2: import("@lit/localize").StrResult;
     s8f4be9f086eb530f: string;
     s90c6a2fed2796c07: string;
+    sbcdf43ebad9c5a3a: string;
     sfb0e98cb12fe463c: string;
-    s8310e34142578360: string;
 };
